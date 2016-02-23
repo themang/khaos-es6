@@ -14,7 +14,7 @@ node_modules: package.json
 	@touch node_modules
 
 test: node_modules
-	babel test/*.js
+	${BIN}/babel-tape-runner test/*.js
 
 validate: node_modules
 	@standard
